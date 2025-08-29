@@ -15,7 +15,10 @@
 <body>
     <h1>Your Tasks</h1>
     <button onclick="location.href='main_index.html'">Back to Main</button>
-    <div id="task_list"></div>
+    <div id="task_list">loadTasks()</div>
     <script src="main_functions.js"></script>
+    <script>
+        document.getElementById("task_list").innerHTML = loadTasks();
+    </script>
 </body>
 </html>

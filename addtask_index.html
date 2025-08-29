@@ -14,16 +14,18 @@
 <body>
     <h1>Add a New Task</h1>
     <!-- <form action="/submit_task" method="post"> -->
-        <label for="task">Task:</label><br>
-        <input type="text" id="task" name="task" required><br><br>
-        <!-- TODO: add input for marker of if the task is a single task or done in units-->
-        <label for="task_type">Task Type:</label><br>
+        <!-- <label for="task">Task:</label><br> -->
+        <!-- <input type="text" id="task" name="task" required><br><br> -->
+        <!-- TODO: add input for marker of if the task is a single task or done in units -->
+        <!-- <label for="task_type">Task Type:</label><br>
         <select id="task_type" name="task_type">
             <option value="single">Single Task</option>
             <option value="units">Task in Units</option>
-        </select><br><br>
+        </select><br><br> -->
         <!-- <input type="submit" value="Add Task"> -->
-        <button onclick="addNewTask()">Add Task</button>
+
+        <input type="text" id="task" name="task" required><br><br>
+        <button onclick="addNewTask(document.getElementById('task').value)">Add Task</button>
         <!-- TODO: fix file loading errror when select 'Add Task' button-->
         <!-- write the values to the task list dailytasklist.txt -->
     <!-- </form> -->
