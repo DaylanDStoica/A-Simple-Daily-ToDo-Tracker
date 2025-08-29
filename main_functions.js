@@ -27,7 +27,7 @@ function resetTasks() {
     // code to reset today's tasks
     // code to read tasks from dailytasklist.txt into todaystasklist.txt
     // task_list = TEMPORARY_RECORD.file_contents;
-    temp_contents = readTxtFile(PERMANENT_RECORD);
+    let temp_contents = readTxtFile(PERMANENT_RECORD);
     writeToTxtFile(TEMPORARY_RECORD, temp_contents);
 }
 
@@ -37,7 +37,7 @@ function loadTasks() {
 }
 
 // when a new task is added, save it to the file
-function addTask(task) {
+function addNewTask(task) {
     // code to append the new task to dailytasklist.txt
     writeToTxtFile(PERMANENT_RECORD, task);
 }
