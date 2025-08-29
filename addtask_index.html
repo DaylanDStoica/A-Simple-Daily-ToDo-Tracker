@@ -16,7 +16,18 @@
     <form action="/submit_task" method="post">
         <label for="task">Task:</label><br>
         <input type="text" id="task" name="task" required><br><br>
+        <!-- TODO: add input for marker of if the task is a single task or done in units-->
+        <label for="task_type">Task Type:</label><br>
+        <select id="task_type" name="task_type">
+            <option value="single">Single Task</option>
+            <option value="units">Task in Units</option>
+        </select><br><br>
         <input type="submit" value="Add Task">
+        <!-- TODO: fix file loading errror when select 'Add Task' button-->
+        <!-- write the values to the task list dailytasklist.txt -->
     </form>
     <br>
     <button onclick="location.href='main_index.html'">Back to Main</button>
+
+</body>
+</html>
