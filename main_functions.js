@@ -1,6 +1,8 @@
 // main_functions.js
 // developed by DaylanDStoica
 
+const PERMANENT_RECORD = "dailytasklist.txt";
+const TEMPORARY_RECORD = "todaystasklist.txt";
 // at the start of the day, load the tasks from the file
 function loadTasks() {
     // code to read tasks from dailytasklist.txt into todaystasklist.txt
