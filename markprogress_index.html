@@ -15,13 +15,16 @@
 <body>
     <h1>Mark Task as Complete</h1>
     <!-- Form to mark progress, either as a single task increment, or in units, added here -->
-    <form action="/mark_progress" method="post">
+    <!-- <form action="/mark_progress" method="post"> -->
         <label for="task_id">Task ID:</label><br>
         <input type="text" id="task_id" name="task_id" required><br><br>
         <label for="units">Units Completed:</label><br>
         <input type="number" id="units" name="units" min="1" required><br><br>
-        <input type="submit" value="Mark as Complete">
-    </form>
-    <br>
+        <!-- <input type="submit" value="Mark as Complete"> -->
+         <button onclick="markTaskProgress()">Mark Progress</button>
+    <!-- </form> -->
+    <br><br>
     <button onclick="location.href='main_index.html'">Back to Main</button>
+    <script src = "main_functions.js"></script>
 </body>
+</html>
